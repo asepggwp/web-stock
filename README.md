@@ -1,2 +1,2 @@
 # web-stock
-web flatform shaam bijak.id
+web flatform saham bijak.id
