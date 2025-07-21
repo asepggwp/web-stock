@@ -419,6 +419,24 @@ footer{
 .footer-layout__card--sublayout li a:hover{
   background-color: transparent;
 }
+@media (max-width: 768px) {
+  video {
+    height: 100vh;
+    object-fit: cover;
+  }
+
+  .section-feedback__card {
+    padding: 20px;
+  }
+
+  .rating {
+    font-size: 24px;
+  }
+
+  .section-feedback__card input {
+    height: 100px;
+  }
+}
 .footer-container__img img{
   width: 20%;
   height: auto;
