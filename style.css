@@ -3,98 +3,141 @@ body{
   max-width: 100%;
   font-family: 'poppins';
 }
-section{
+.stock-screener{
+  background-color: white;
+  max-width: 100%;
+  font-family: 'poppins';
+}
+.section{
    padding: 1px 1px;
    height: 90vh;
    background: linear-gradient(to bottom, rgb(50,60,83), rgb(0,0,0), rgb(50,60,83));
 }
-footer{
+.footer{
   padding: 70px;
   padding-top: 30px;
   padding-bottom: 30px;
   height: 75vh;
   background-color: #53A4A7;
 }
-.navbar__card-layout{
+.navbar{
   position: sticky;
   top: 0;
   z-index: 1000;
 }
 
-.navbar__card{
+.navbar__container{
   position: relative;
   max-width: 100%;
   background-color: #272626;
   padding: 1px;
   margin-bottom: 0px;
 }
-
 .navbar__img{
   float: left;
 }
-
-.navbar__card-content{
-  background-color: #272626;
-}
-
-.navbar__card-content-layout{
+.navbar__menu{
   display: flex;
   gap: 50px;
 }
-
-.navbar__card-content-layout li{
+.navbar__menu li{
   list-style-type: none;
 }
-
-.navbar__card-content-layout li a{
+.navbar__menu li a{
   color: white;
   text-decoration: none;
   font-weight: bold;
   font-size: 17px;
+  cursor: pointer;
 }
 
-.navbar__card-content-layout li a:hover{
+.navbar__menu li a:hover{
   background-color: #53A4A7;
 }
 
-.navbar__card-content-login-sigin{
+.navbar__auth{
   display: flex;
   gap: 50px;
   position: absolute;
   right: 30px;
+  top: 15px;
 }
-.navbar__card-content-login-sigin button{
+.navbar__auth button{
   width: 84px;
   height: 30px;
   background-color: #53A4A7;
   border: 1px solid #53A4A7;
+  color: white;
+  font-weight: bold;
+  font-family: 'poppins';
+  cursor: pointer;
 }
 
-.navbar__card-subcontent{
+.navbar__menu-secondary{
   background-color: #53A4A7;
 }
 
-.navbar__card-subcontent-layout{
+.navbar__menu-secondary-layout{
   display: flex;
-  gap: 70px;
+  gap: 100px;
   padding-bottom: 2px;
 }
 
-.navbar__card-subcontent-layout li{
+.navbar__menu-secondary-layout li{
   list-style-type: none;
 }
 
-.navbar__card-subcontent-layout li a{
+.navbar__menu-secondary-layout li a{
   color: white;
   text-decoration: none;
   font-weight: bold;
   font-size: 15px;
 }
 
-.navbar__card-subcontent-layout li a:hover{
+.navbar__menu-secondary-layout li a:hover{
   background-color: #272626;
 }
-
+#navbar-subcontent--hidden-Community{
+  display: none;
+}
+#navbar-subcontent--hidden-About-Us{
+  display: none;
+}
+.navbar-subcontent li{
+  list-style-type: none;
+  padding: 10px;
+}
+.navbar-subcontent li a{
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+.navbar-subcontent li a:hover{
+  background-color: #53A4A7;
+}
+.navbar-subcontent__layout{
+  display: flex;
+}
+.navbar-subcontent__menu{
+  min-width: 20%;
+}
+#navbar-subcontent--hidden-our-story{
+  display: none;
+}
+#navbar-subcontent--hidden-visi-misi{
+  display: none;
+}
+#navbar-subcontent--hidden-contact{
+  display: none;
+}
+.navbar-subcontent__visi-mission-list li{
+  list-style-type: decimal;
+}
+.navbar-subcontent__content{
+  color: white;
+  text-align: justify;
+  margin-right: 5%;
+}
 .hero-section__container-layout{
   position: relative;
   width: 100%;
@@ -139,28 +182,31 @@ footer{
 }
 
 .hero-section__container-content-button button{
-  width: 120px;
+  width: 130px;
   height: 30px;
   margin-top: 50px;
   background-color: #53A4A7;
   border: 1px solid #53A4A7;
   cursor: pointer;
   border-radius: 20px;
-}
-.hero-section__container-content-button a{
-  text-decoration: none;
-  font-weight: bold;
   color: white;
+  font-weight: bold;
+  font-family: 'poppins';
+  cursor: pointer;
 }
 .features-section__container{
   margin-top: 80px;
   text-align: center;
 }
-.features-section__container h1{
+.features-section__title{
+  color: white;
+  font-size: 20px;
+}
+.features-section__text{
   color: white;
 }
 .features-section__container-position{
-  margin-top: 100px;
+  margin-top: 70px;
 }
 .features-section__container-layout{
   display: flex;
@@ -177,101 +223,84 @@ footer{
   width: 30%;
   height: auto;
 }
-.section-market-update{
+.market-update-section{
   margin-top: 80px;
   text-align: center;
 }
-.section-market-update h1{
+.market-update-section__title{
+  font-size: 20px;
   color: white;
 }
-
-.stock-position-card{
+.market-update-section__container{
   margin-top: 50px;
 }
 
-.stock-position-layout{
+.stock__container{
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 50px;
 }
-.stock-card-container-down{
-  background: linear-gradient(to right, #FFFFFF 0%, #FF0000 40%);
+.stock-card{
   width: 20%;
   height: 150px;
   border-radius: 10px;
   position: relative;
 }
-.stock-card-container-up{
+.stock-card--down{
+background: linear-gradient(to right, #FFFFFF 0%, #FF0000 40%);
+}
+.stock-card--up{
   background: linear-gradient(to right, #FFFFFF 0%, #7AD463 40%);
-  width: 20%;
-  height: 150px;
-  border-radius: 10px;
-  position: relative;
 }
 .stock-card__code{
   position: absolute;
   top: -10px;
   left: 10px;
 }
-.stock-card__price-down{
+.stock-card__price{
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.stock-card__price-down h3{
+.stock-card__price h3{
   font-weight: normal;
   font-size: 30px;
 }
-.stock-card__price-down svg{
+.stock-card__icon--down {
   transform: rotate(180deg);
 }
-.stock-card__price-up{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.stock-card__icon--up {
+  transform: rotate(0deg);
 }
-.stock-card__price-up h3{
-  font-weight: normal;
-  font-size: 30px;
-}
-.stock-card__price-percent{
+.number--percent{
   position: absolute;
   top: 75px;
   left: 10px;
 }
-.stock-card__price-percent h3{
+.stock-card__number h3{
   font-weight: normal;
   font-size: 24px;
 }
-.stock-card__percent{
+.text--percent {
   position: absolute;
   top: 115px;
   left: 10px;
 }
-.stock-card__percent h4{
+.stock-card__text h4{
   font-weight: normal;
   font-size: 10px;
 }
-.stock-card__price-change{
+.number--change{
   position: absolute;
   top: 75px;
   left: 210px;
 }
-.stock-card__price-change h3{
-  font-weight: normal;
-  font-size: 24px;
-}
-.stock-card__change{
+.text--change{
   position: absolute;
   top: 115px;
   left: 215px;
-}
-.stock-card__change h4{
-  font-weight: normal;
-  font-size: 10px;
 }
 .stock-card__sector{
   position: absolute;
@@ -295,16 +324,13 @@ footer{
 .section-learn__title{
   font-size: 20px;
 }
-.section-learn__subtitle h3{
-  font-weight: normal;
-}
 .section-learn__text{
   margin-top: 50px;
 }
 .section-learn__text span{
   color: #53A4A7;
 }
-.section-learn-layout{
+.section-learn__layout{
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -327,13 +353,12 @@ footer{
   background-color: #53A4A7;
   border: none;
   border-radius: 10px;
-}
-.section-learn__card a{
   font-size: 20px;
   text-decoration: none;
-  padding: 10px;
+  padding: 5px;
   font-weight: bold;
   color: white;
+  cursor: pointer;
 }
 .section-feedback{
   text-align: center;
@@ -387,6 +412,7 @@ footer{
   background-color: #53A4A7;
   border: none;
   border-radius: 10px;
+  cursor: pointer;
 }
 .footer-layout{
   display: flex;
@@ -410,32 +436,11 @@ footer{
 .footer-layout__card li a:hover{
   background-color: #4BC1C5;
 }
-.footer-layout__card--link-partner{
-  display: flex;
-}
 .footer-layout__card--sublayout{
   display: flex;
 }
 .footer-layout__card--sublayout li a:hover{
   background-color: transparent;
-}
-@media (max-width: 768px) {
-  video {
-    height: 100vh;
-    object-fit: cover;
-  }
-
-  .section-feedback__card {
-    padding: 20px;
-  }
-
-  .rating {
-    font-size: 24px;
-  }
-
-  .section-feedback__card input {
-    height: 100px;
-  }
 }
 .footer-container__img img{
   width: 20%;
@@ -443,3 +448,4 @@ footer{
   float: right;
   box-shadow: 0 8px 20px #00000040;
 }
+
